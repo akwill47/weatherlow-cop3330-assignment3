@@ -6,7 +6,6 @@ import java.util.Scanner;
  *  Copyright 2021 William Weatherlow
  */
 public class Solution41 {
-    Scanner in = new Scanner(System.in);
     public static void main(String[] args){
         input get = new input();
         sort adjust = new sort();
