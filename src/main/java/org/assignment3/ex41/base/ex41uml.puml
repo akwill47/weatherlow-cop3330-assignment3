@@ -1,0 +1,36 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+
+App <|-- input
+App <|-- sort
+App <|-- print
+
+class App {
+-nameList : ArrayList<String>
+-nameCount : int
+}
+
+class input {
+-nameList : ArrayList<String>
+-nameCount : int
++readFile(ArrayList<String>) : ArrayList<String>
++count(ArrayList<String>) : int
+}
+class sort {
+-check : boolean
++sort(ArrayList<String>) : String
+}
+class print{
++display(ArrayList<String>, int nameCount) : void
+}
+
+
+
+
+
+
+
+
+@enduml
