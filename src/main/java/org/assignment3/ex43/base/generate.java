@@ -20,9 +20,6 @@ public class generate {
 
         System.out.printf("Created ./website/%s/index.html\n",siteName);
 
-
-
-
         return true;
 
     }
