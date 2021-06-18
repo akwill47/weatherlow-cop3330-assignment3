@@ -6,15 +6,19 @@ import java.util.Collections;
 public class parse {
     public String splitData(ArrayList<String> nameList,int nameCount,ArrayList<String[]> splitData) {
         boolean check=false;
+        String temp1;
+        String[] temp;
         try{
             for(int i =0;i<nameCount;i++) {
-                splitData.set(i,(nameList.get(i).split(",")));
+                temp1 = nameList.get(i);
+                temp = temp1.split(",");
+                splitData.add(i,temp);
 
             }
-        }catch(Error e){
+            check = true;
+        }catch(IndexOutOfBoundsException e){
             System.out.print("Error parsing data");
         }
-        check = true;
         if(check)
             return "Data parse successful";
 

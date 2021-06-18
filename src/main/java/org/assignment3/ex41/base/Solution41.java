@@ -1,6 +1,6 @@
 package org.assignment3.ex41.base;
 import java.util.ArrayList;
-import java.util.Scanner;
+
 /*
  *  UCF COP3330 Summer 2021 Assignment 3 Solution
  *  Copyright 2021 William Weatherlow
