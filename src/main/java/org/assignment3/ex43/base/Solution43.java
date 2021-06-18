@@ -10,17 +10,18 @@ public class Solution43 {
     public static void main(String[] args){
         input get = new input();
         generate create = new generate();
-        //prompt for author/name/if user wants js/css files
+        //prompt for author/name and if user wants js/css files
         String author = get.author();
         String siteName = get.siteName();
         String js = get.jsPrompt();
         String css = get.cssPrompt();
-
-        //generate html and files
+        //generate directories
+        create.createDirs(author,siteName,css,js);
+        //generate html file
         try {
-            create.create(author, siteName, css, js);
+            create.createHtml(author, siteName);
         }catch(IOException e){
-            System.out.print("Error generating directory and html file");
+            System.out.print("Error generating html file");
         }
     }
 }

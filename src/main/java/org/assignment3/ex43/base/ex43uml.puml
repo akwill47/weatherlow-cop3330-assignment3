@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+App --|> input
+App --|> generate
+class input{
+
++author()
++siteName();
++jsPrompt();
++cssPrompt();
+}
+class generate {
++createHtml();
++createDirs();
+}
+
+
+
+@enduml

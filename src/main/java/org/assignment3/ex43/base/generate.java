@@ -6,13 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class generate {
-    public void create(String author, String siteName, String css, String js) throws IOException {
-        String path;
-        path ="./website/";
-        (new File(path)).mkdir();
-        path ="./website/"+siteName;
-        (new File(path)).mkdir();
-        System.out.printf("Created ./website/%s\n",siteName);
+    public boolean createHtml(String author, String siteName) throws IOException {
         File html = new File("./website/"+siteName+"/index.html");
         BufferedWriter bw = new BufferedWriter(new FileWriter(html));
         bw.write("<!DOCTYPE html>\n");
@@ -28,17 +22,30 @@ public class generate {
 
 
 
+
+        return true;
+
+    }
+    public int createDirs(String author, String siteName,String css, String js){
+        int check=0;
+        String path;
+        path ="./website/"+siteName;
+        (new File(path)).mkdirs();
+        System.out.printf("Created ./website/%s\n",siteName);
+        check +=1;
+
         if(js.equals("y")){
             path ="./website/"+siteName+"/js";
             (new File(path)).mkdir();
             System.out.printf("Created ./website/%s/js/\n",siteName);
+            check +=1;
         }
         if(css.equals("y")){
             path ="./website/"+siteName+"/css";
             (new File(path)).mkdir();
             System.out.printf("Created ./website/%s/css/\n",siteName);
+            check +=1;
         }
-
-
+       return check;
     }
 }
