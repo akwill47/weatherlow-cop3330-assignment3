@@ -1,5 +1,6 @@
 package org.assignment3.ex45.base;
 
+
 public class Solution45 {
     public static void main(String[] args){
         prompt ask = new prompt();

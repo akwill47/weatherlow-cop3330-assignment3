@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+App --|> display
+App --|> parse
+parse --|> prompt
+class display{
++output();
+}
+class parse {
++data();
+}
+class prompt{
++item();
+}
+
+@enduml
