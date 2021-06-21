@@ -4,6 +4,8 @@
 App --|> display
 App --|> parse
 parse --|> prompt
+App --|> readFile
+
 class display{
 +output();
 }
@@ -12,6 +14,9 @@ class parse {
 }
 class prompt{
 +item();
+}
+class readFile{
++read();
 }
 
 @enduml

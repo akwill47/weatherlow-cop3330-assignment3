@@ -6,7 +6,7 @@ public class Solution46 {
     public static void main(String[] args){
         readFile read = new readFile();
         parse  getWords = new parse();
-        countOccurences count = new countOccurences();
+        countOccurrences count = new countOccurrences();
         display output = new display();
         //read file as a string
         String input = read.read();

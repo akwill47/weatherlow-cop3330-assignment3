@@ -6,11 +6,11 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class countOccurencesTest {
+class countOccurrencesTest {
 
     @Test
     void count_letters() {
-        countOccurences count = new countOccurences();
+        countOccurrences count = new countOccurrences();
         ArrayList<String> temp = new ArrayList<>();
         temp.add("a");temp.add("b");temp.add("c");
         String testString ="a b c c b a a b c a b c a c b a";
@@ -22,7 +22,7 @@ class countOccurencesTest {
 
     @Test
     void count_words() {
-        countOccurences count = new countOccurences();
+        countOccurrences count = new countOccurrences();
         ArrayList<String> temp = new ArrayList<>();
         temp.add("bob");temp.add("hello");temp.add("jim");
         String testString ="hello bob how are you doing, i'm jim it's nice to meet you bob says jim";//bruh i just wanted to see if it could parse a string

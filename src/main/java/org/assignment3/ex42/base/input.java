@@ -10,7 +10,7 @@ public class input {
         ArrayList<String> nameList = new ArrayList<String>();
         int count=0;
         try {
-            File fp = new File("C:\\Users\\wilwe\\IdeaProjects\\weatherlow-cop3330-assignment3\\src\\main\\java\\org\\assignment3\\ex42\\exercise42_input.txt");
+            File fp = new File("src/main/java/org/assignment3/resources/exercise42_input.txt");
             Scanner in = new Scanner(fp);
 
             while(in.hasNextLine()){

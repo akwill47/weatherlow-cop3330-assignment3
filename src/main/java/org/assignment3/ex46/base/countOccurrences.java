@@ -2,7 +2,7 @@ package org.assignment3.ex46.base;
 
 import java.util.ArrayList;
 
-public class countOccurences {
+public class countOccurrences {
     public int[] count(ArrayList<String> uniqueWords,String input){
         String[] temp = input.split(" ");
         int[] wordCount = new int[uniqueWords.size()];

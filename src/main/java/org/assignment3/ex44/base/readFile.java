@@ -11,7 +11,7 @@ import java.io.FileReader;
 
 public class readFile {
     public JsonArray read() {
-        File input = new File("C:\\Users\\wilwe\\IdeaProjects\\weatherlow-cop3330-assignment3\\src\\main\\java\\org\\assignment3\\ex44\\base\\exercise44_input.json");
+        File input = new File("src/main/java/org/assignment3/resources/exercise44_input.json");
         JsonArray jsonArr = new JsonArray();
 
         try {

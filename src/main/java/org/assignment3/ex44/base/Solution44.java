@@ -7,12 +7,13 @@ public class Solution44 {
         parse grab = new parse();
         display out = new display();
         readFile read = new readFile();
-        //prompt for product
-            //is called inside parse class
         //read file
         JsonArray jsonArr = read.read();
-        //parse json array for info
+
+        //prompt for item(called inside the parse class)
+            //parse json Array for info
         String output = grab.data(jsonArr);
+
         //display result
         out.output(output);
     }
