@@ -1,6 +1,8 @@
 package org.assignment3.ex45.base;
-
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 3 Solution
+ *  Copyright 2021 William Weatherlow
+ */
 public class Solution45 {
     public static void main(String[] args){
         prompt ask = new prompt();
