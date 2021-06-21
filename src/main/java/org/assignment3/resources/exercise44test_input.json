@@ -1,0 +1,7 @@
+{
+  "products" : [
+    {"name": "jetpack", "price": 5000.00, "quantity": 999 },
+    {"name": "Iphone", "price": 699.00, "quantity": 2 },
+    {"name": "3070ti", "price": 2000.00, "quantity": 0 }
+  ]
+}

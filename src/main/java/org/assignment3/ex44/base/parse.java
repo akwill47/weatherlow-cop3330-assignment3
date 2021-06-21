@@ -2,9 +2,8 @@ package org.assignment3.ex44.base;
 import com.google.gson.*;
 import java.io.*;
 public class parse {
-    public String data(JsonArray jsonArr) {
+    public String data(JsonArray jsonArr,String item) {
         prompt get = new prompt();
-        String item = get.item();
         String tempName;
         String price = new String();
         String quantity= new String();

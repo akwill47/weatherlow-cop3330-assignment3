@@ -10,8 +10,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 public class readFile {
-    public JsonArray read() {
-        File input = new File("src/main/java/org/assignment3/resources/exercise44_input.json");
+    public JsonArray read(String fileName) {
+        String path = "src/main/java/org/assignment3/resources/"+fileName;
+        File input = new File(path);
         JsonArray jsonArr = new JsonArray();
 
         try {

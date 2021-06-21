@@ -9,12 +9,15 @@ public class Solution44 {
         parse grab = new parse();
         display out = new display();
         readFile read = new readFile();
+        prompt input = new prompt();
         //read file
-        JsonArray jsonArr = read.read();
+        String fileName = "exercise44_input.json";
+        JsonArray jsonArr = read.read(fileName);
+        //prompt for item
+        String item = input.item();
 
-        //prompt for item(called inside the parse class)
             //parse json Array for info
-        String output = grab.data(jsonArr);
+        String output = grab.data(jsonArr,item);
 
         //display result
         out.output(output);
